@@ -1,0 +1,1728 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         BASIC HTML STRUCTURE
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Complete HTML Tags Guide">
+
+    <title>Complete HTML Tags Guide</title>
+
+
+    <!-- =========================
+         INTERNAL CSS
+    ========================== -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section,
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #475569;
+        }
+
+        code {
+            background: #e2e8f0;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #0f172a;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .example {
+            background: #f8fafc;
+            border-left: 5px solid #2563eb;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e2e8f0;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .tag {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header>
+
+    <h1>Complete HTML Tags Guide</h1>
+
+    <p>
+        HTML Tags + Examples + Simple Explanations
+    </p>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
+
+<nav>
+
+    <a href="#structure">Structure</a>
+
+    <a href="#text">Text</a>
+
+    <a href="#links">Links</a>
+
+    <a href="#media">Media</a>
+
+    <a href="#lists">Lists</a>
+
+    <a href="#tables">Tables</a>
+
+    <a href="#forms">Forms</a>
+
+    <a href="#semantic">Semantic</a>
+
+    <a href="#advanced">Advanced</a>
+
+</nav>
+
+
+<main>
+
+
+<!-- =====================================================
+     1. BASIC STRUCTURE
+====================================================== -->
+
+<section id="structure">
+
+    <h2>1. Basic HTML Structure</h2>
+
+    <p>
+        These tags create the basic structure of every HTML webpage.
+    </p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+
+<table>
+
+<tr>
+    <th>Tag</th>
+    <th>Explanation</th>
+</tr>
+
+<tr>
+    <td>&lt;!DOCTYPE html&gt;</td>
+    <td>Tells the browser that the document uses HTML5.</td>
+</tr>
+
+<tr>
+    <td>&lt;html&gt;</td>
+    <td>Root element of an HTML page.</td>
+</tr>
+
+<tr>
+    <td>&lt;head&gt;</td>
+    <td>Contains webpage information and resources.</td>
+</tr>
+
+<tr>
+    <td>&lt;title&gt;</td>
+    <td>Sets the browser tab title.</td>
+</tr>
+
+<tr>
+    <td>&lt;body&gt;</td>
+    <td>Contains visible webpage content.</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- =====================================================
+     2. HEAD TAGS
+====================================================== -->
+
+<section>
+
+    <h2>2. Head Tags</h2>
+
+<h3>&lt;meta&gt;</h3>
+
+<p>
+    Provides information about the webpage.
+</p>
+
+<pre>
+&lt;meta charset="UTF-8"&gt;
+
+&lt;meta name="viewport"
+      content="width=device-width, initial-scale=1.0"&gt;
+</pre>
+
+
+<h3>&lt;link&gt;</h3>
+
+<p>
+    Connects external CSS files.
+</p>
+
+<pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre>
+
+
+<h3>&lt;style&gt;</h3>
+
+<p>
+    Adds CSS directly inside HTML.
+</p>
+
+<pre>
+&lt;style&gt;
+
+    h1 {
+        color: blue;
+    }
+
+&lt;/style&gt;
+</pre>
+
+
+<h3>&lt;script&gt;</h3>
+
+<p>
+    Adds JavaScript.
+</p>
+
+<pre>
+&lt;script&gt;
+
+    alert("Hello");
+
+&lt;/script&gt;
+</pre>
+
+</section>
+
+
+
+<!-- =====================================================
+     3. HEADINGS
+====================================================== -->
+
+<section>
+
+    <h2>3. Heading Tags</h2>
+
+<p>
+    HTML provides six heading levels.
+</p>
+
+<div class="example">
+
+    <h1>H1 Heading</h1>
+
+    <h2>H2 Heading</h2>
+
+    <h3>H3 Heading</h3>
+
+    <h4>H4 Heading</h4>
+
+    <h5>H5 Heading</h5>
+
+    <h6>H6 Heading</h6>
+
+</div>
+
+<pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</pre>
+
+<p>
+    <strong>h1</strong> is the most important heading.
+    <strong>h6</strong> is the least important.
+</p>
+
+</section>
+
+
+
+<!-- =====================================================
+     4. TEXT TAGS
+====================================================== -->
+
+<section id="text">
+
+    <h2>4. Text Formatting Tags</h2>
+
+<div class="example">
+
+    <p>This is a paragraph.</p>
+
+    <b>Bold text</b>
+
+    <br>
+
+    <strong>Important text</strong>
+
+    <br>
+
+    <i>Italic text</i>
+
+    <br>
+
+    <em>Emphasized text</em>
+
+    <br>
+
+    <u>Underlined text</u>
+
+    <br>
+
+    <mark>Highlighted text</mark>
+
+    <br>
+
+    <small>Small text</small>
+
+    <br>
+
+    <del>Deleted text</del>
+
+    <br>
+
+    <ins>Inserted text</ins>
+
+    <br>
+
+    H<sub>2</sub>O
+
+    <br>
+
+    X<sup>2</sup>
+
+</div>
+
+
+<pre>
+&lt;p&gt;Paragraph&lt;/p&gt;
+
+&lt;b&gt;Bold&lt;/b&gt;
+
+&lt;strong&gt;Important&lt;/strong&gt;
+
+&lt;i&gt;Italic&lt;/i&gt;
+
+&lt;em&gt;Emphasis&lt;/em&gt;
+
+&lt;u&gt;Underline&lt;/u&gt;
+
+&lt;mark&gt;Highlight&lt;/mark&gt;
+
+&lt;small&gt;Small&lt;/small&gt;
+
+&lt;del&gt;Deleted&lt;/del&gt;
+
+&lt;ins&gt;Inserted&lt;/ins&gt;
+
+H&lt;sub&gt;2&lt;/sub&gt;O
+
+X&lt;sup&gt;2&lt;/sup&gt;
+</pre>
+
+</section>
+
+
+
+<!-- =====================================================
+     5. BR AND HR
+====================================================== -->
+
+<section>
+
+    <h2>5. Line Break and Horizontal Line</h2>
+
+<h3>&lt;br&gt;</h3>
+
+<p>
+    Creates a line break.
+</p>
+
+<pre>
+Hello&lt;br&gt;
+World
+</pre>
+
+<div class="example">
+
+    Hello<br>
+    World
+
+</div>
+
+
+<h3>&lt;hr&gt;</h3>
+
+<p>
+    Creates a horizontal line.
+</p>
+
+<pre>
+&lt;hr&gt;
+</pre>
+
+<hr>
+
+</section>
+
+
+
+<!-- =====================================================
+     6. LINKS
+====================================================== -->
+
+<section id="links">
+
+    <h2>6. Link Tag</h2>
+
+<p>
+    The <code>&lt;a&gt;</code> tag creates hyperlinks.
+</p>
+
+<pre>
+&lt;a href="https://www.google.com"&gt;
+    Google
+&lt;/a&gt;
+</pre>
+
+<div class="example">
+
+    <a href="https://www.google.com"
+       target="_blank">
+
+        Open Google
+
+    </a>
+
+</div>
+
+
+<h3>Important Attributes</h3>
+
+<table>
+
+<tr>
+    <th>Attribute</th>
+    <th>Purpose</th>
+</tr>
+
+<tr>
+    <td>href</td>
+    <td>Specifies destination.</td>
+</tr>
+
+<tr>
+    <td>target</td>
+    <td>Specifies where to open the link.</td>
+</tr>
+
+<tr>
+    <td>title</td>
+    <td>Displays tooltip information.</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- =====================================================
+     7. IMAGE
+====================================================== -->
+
+<section>
+
+    <h2>7. Image Tag</h2>
+
+<p>
+    The <code>&lt;img&gt;</code> tag displays an image.
+</p>
+
+<pre>
+&lt;img
+    src="photo.jpg"
+    alt="My Photo"
+    width="300"
+&gt;
+</pre>
+
+<p>
+    <strong>src</strong> = image location
+</p>
+
+<p>
+    <strong>alt</strong> = alternative text
+</p>
+
+<div class="example">
+
+    <img
+        src="c:\Users\ELCOT\Downloads\images.jpg"
+        alt="Example image">
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="lists">
+
+    <h2>8. List Tags</h2>
+
+
+<h3>Unordered List - &lt;ul&gt;</h3>
+
+<pre>
+&lt;ul&gt;
+
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+
+&lt;/ul&gt;
+</pre>
+
+<div class="example">
+
+<ul>
+
+    <li>HTML</li>
+
+    <li>CSS</li>
+
+    <li>JavaScript</li>
+
+</ul>
+
+</div>
+
+
+<h3>Ordered List - &lt;ol&gt;</h3>
+
+<div class="example">
+
+<ol>
+
+    <li>HTML</li>
+
+    <li>CSS</li>
+
+    <li>JavaScript</li>
+
+</ol>
+
+</div>
+
+
+<h3>Description List</h3>
+
+<pre>
+&lt;dl&gt;
+
+    &lt;dt&gt;HTML&lt;/dt&gt;
+
+    &lt;dd&gt;
+        HyperText Markup Language
+    &lt;/dd&gt;
+
+&lt;/dl&gt;
+</pre>
+
+<div class="example">
+
+<dl>
+
+    <dt><strong>HTML</strong></dt>
+
+    <dd>
+        HyperText Markup Language
+    </dd>
+
+    <dt><strong>CSS</strong></dt>
+
+    <dd>
+        Cascading Style Sheets
+    </dd>
+
+</dl>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     9. DIV AND SPAN
+====================================================== -->
+
+<section>
+
+    <h2>9. Div and Span</h2>
+
+
+<h3>&lt;div&gt;</h3>
+
+<p>
+    A block-level container used to group content.
+</p>
+
+<pre>
+&lt;div&gt;
+
+    &lt;h2&gt;About Me&lt;/h2&gt;
+
+    &lt;p&gt;I am an MCA student.&lt;/p&gt;
+
+&lt;/div&gt;
+</pre>
+
+
+<h3>&lt;span&gt;</h3>
+
+<p>
+    An inline container used for styling or grouping small
+    portions of content.
+</p>
+
+<pre>
+&lt;p&gt;
+
+    My name is
+    &lt;span&gt;Rashidh&lt;/span&gt;.
+
+&lt;/p&gt;
+</pre>
+
+
+<div class="example">
+
+    <p>
+        My name is
+        <span style="color:red;">
+            Rashidh
+        </span>.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     10. SEMANTIC TAGS
+====================================================== -->
+
+<section id="semantic">
+
+    <h2>10. Semantic HTML Tags</h2>
+
+<p>
+    Semantic tags clearly describe the purpose of their content.
+</p>
+
+<pre>
+&lt;header&gt;
+    Website Header
+&lt;/header&gt;
+
+&lt;nav&gt;
+    Navigation
+&lt;/nav&gt;
+
+&lt;main&gt;
+    Main Content
+&lt;/main&gt;
+
+&lt;section&gt;
+    Section
+&lt;/section&gt;
+
+&lt;article&gt;
+    Article
+&lt;/article&gt;
+
+&lt;aside&gt;
+    Sidebar
+&lt;/aside&gt;
+
+&lt;footer&gt;
+    Footer
+&lt;/footer&gt;
+</pre>
+
+
+<table>
+
+<tr>
+    <th>Tag</th>
+    <th>Purpose</th>
+</tr>
+
+<tr>
+    <td>&lt;header&gt;</td>
+    <td>Top/header content.</td>
+</tr>
+
+<tr>
+    <td>&lt;nav&gt;</td>
+    <td>Navigation links.</td>
+</tr>
+
+<tr>
+    <td>&lt;main&gt;</td>
+    <td>Main content.</td>
+</tr>
+
+<tr>
+    <td>&lt;section&gt;</td>
+    <td>Content section.</td>
+</tr>
+
+<tr>
+    <td>&lt;article&gt;</td>
+    <td>Independent content.</td>
+</tr>
+
+<tr>
+    <td>&lt;aside&gt;</td>
+    <td>Side/related content.</td>
+</tr>
+
+<tr>
+    <td>&lt;footer&gt;</td>
+    <td>Bottom/footer content.</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- =====================================================
+     11. TABLE
+====================================================== -->
+
+<section id="tables">
+
+    <h2>11. Table Tags</h2>
+
+<pre>
+&lt;table&gt;
+
+    &lt;tr&gt;
+
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Course&lt;/th&gt;
+
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+
+        &lt;td&gt;Rashidh&lt;/td&gt;
+        &lt;td&gt;MCA&lt;/td&gt;
+
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+</pre>
+
+
+<div class="example">
+
+<table>
+
+    <caption>
+        Student Details
+    </caption>
+
+    <thead>
+
+        <tr>
+
+            <th>Name</th>
+
+            <th>Course</th>
+
+            <th>Mark</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>Rashidh</td>
+
+            <td>MCA</td>
+
+            <td>90</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Arun</td>
+
+            <td>MCA</td>
+
+            <td>85</td>
+
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+
+        <tr>
+
+            <td colspan="2">
+                Average
+            </td>
+
+            <td>87.5</td>
+
+        </tr>
+
+    </tfoot>
+
+</table>
+
+</div>
+
+
+<h3>Table Tags</h3>
+
+<table>
+
+<tr>
+    <th>Tag</th>
+    <th>Meaning</th>
+</tr>
+
+<tr>
+    <td>table</td>
+    <td>Creates table</td>
+</tr>
+
+<tr>
+    <td>tr</td>
+    <td>Table row</td>
+</tr>
+
+<tr>
+    <td>th</td>
+    <td>Table heading</td>
+</tr>
+
+<tr>
+    <td>td</td>
+    <td>Table data</td>
+</tr>
+
+<tr>
+    <td>thead</td>
+    <td>Table header section</td>
+</tr>
+
+<tr>
+    <td>tbody</td>
+    <td>Table body</td>
+</tr>
+
+<tr>
+    <td>tfoot</td>
+    <td>Table footer</td>
+</tr>
+
+<tr>
+    <td>caption</td>
+    <td>Table title</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- =====================================================
+     12. FORM
+====================================================== -->
+
+<section id="forms">
+
+    <h2>12. Form Tags</h2>
+
+<p>
+    Forms collect information from users.
+</p>
+
+<pre>
+&lt;form&gt;
+
+    &lt;label&gt;Name&lt;/label&gt;
+
+    &lt;input type="text"&gt;
+
+    &lt;button&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+</pre>
+
+
+<div class="example">
+
+<form>
+
+    <label>
+        Name:
+    </label>
+
+    <input
+        type="text"
+        placeholder="Enter your name">
+
+    <br><br>
+
+
+    <label>
+        Email:
+    </label>
+
+    <input
+        type="email"
+        placeholder="Enter email">
+
+    <br><br>
+
+
+    <label>
+        Password:
+    </label>
+
+    <input
+        type="password"
+        placeholder="Password">
+
+    <br><br>
+
+
+    <label>
+        Age:
+    </label>
+
+    <input
+        type="number">
+
+    <br><br>
+
+
+    <label>
+        Date:
+    </label>
+
+    <input
+        type="date">
+
+    <br><br>
+
+
+    <label>
+        Upload:
+    </label>
+
+    <input
+        type="file">
+
+    <br><br>
+
+
+    <button type="submit">
+        Submit
+    </button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+    <h2>13. Input Types</h2>
+
+<table>
+
+<tr>
+    <th>Type</th>
+    <th>Example</th>
+</tr>
+
+<tr>
+    <td>text</td>
+    <td>&lt;input type="text"&gt;</td>
+</tr>
+
+<tr>
+    <td>email</td>
+    <td>&lt;input type="email"&gt;</td>
+</tr>
+
+<tr>
+    <td>password</td>
+    <td>&lt;input type="password"&gt;</td>
+</tr>
+
+<tr>
+    <td>number</td>
+    <td>&lt;input type="number"&gt;</td>
+</tr>
+
+<tr>
+    <td>date</td>
+    <td>&lt;input type="date"&gt;</td>
+</tr>
+
+<tr>
+    <td>time</td>
+    <td>&lt;input type="time"&gt;</td>
+</tr>
+
+<tr>
+    <td>file</td>
+    <td>&lt;input type="file"&gt;</td>
+</tr>
+
+<tr>
+    <td>color</td>
+    <td>&lt;input type="color"&gt;</td>
+</tr>
+
+<tr>
+    <td>range</td>
+    <td>&lt;input type="range"&gt;</td>
+</tr>
+
+<tr>
+    <td>checkbox</td>
+    <td>&lt;input type="checkbox"&gt;</td>
+</tr>
+
+<tr>
+    <td>radio</td>
+    <td>&lt;input type="radio"&gt;</td>
+</tr>
+
+<tr>
+    <td>search</td>
+    <td>&lt;input type="search"&gt;</td>
+</tr>
+
+<tr>
+    <td>url</td>
+    <td>&lt;input type="url"&gt;</td>
+</tr>
+
+<tr>
+    <td>tel</td>
+    <td>&lt;input type="tel"&gt;</td>
+</tr>
+
+<tr>
+    <td>submit</td>
+    <td>&lt;input type="submit"&gt;</td>
+</tr>
+
+<tr>
+    <td>reset</td>
+    <td>&lt;input type="reset"&gt;</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- =====================================================
+     14. RADIO AND CHECKBOX
+====================================================== -->
+
+<section>
+
+    <h2>14. Radio Buttons and Checkboxes</h2>
+
+<h3>Radio Button</h3>
+
+<p>
+    Radio buttons are used when selecting one option.
+</p>
+
+<div class="example">
+
+<label>
+
+    <input
+        type="radio"
+        name="gender">
+
+    Male
+
+</label>
+
+
+<label>
+
+    <input
+        type="radio"
+        name="gender">
+
+    Female
+
+</label>
+
+</div>
+
+
+<h3>Checkbox</h3>
+
+<p>
+    Checkboxes allow multiple selections.
+</p>
+
+<div class="example">
+
+<label>
+
+    <input type="checkbox">
+
+    HTML
+
+</label>
+
+
+<label>
+
+    <input type="checkbox">
+
+    CSS
+
+</label>
+
+
+<label>
+
+    <input type="checkbox">
+
+    JavaScript
+
+</label>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+    <h2>15. Select and Option</h2>
+
+<p>
+    Creates a dropdown list.
+</p>
+
+<pre>
+&lt;select&gt;
+
+    &lt;option&gt;MCA&lt;/option&gt;
+
+    &lt;option&gt;MBA&lt;/option&gt;
+
+    &lt;option&gt;BCA&lt;/option&gt;
+
+&lt;/select&gt;
+</pre>
+
+
+<div class="example">
+
+<select>
+
+    <option>MCA</option>
+
+    <option>MBA</option>
+
+    <option>BCA</option>
+
+    <option>B.Tech</option>
+
+</select>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+    <h2>16. Textarea</h2>
+
+<p>
+    Used for entering large amounts of text.
+</p>
+
+<pre>
+&lt;textarea
+    rows="5"
+    cols="30"&gt;
+&lt;/textarea&gt;
+</pre>
+
+
+<textarea
+    rows="5"
+    cols="40"
+    placeholder="Enter your message">
+
+</textarea>
+
+</section>
+
+
+
+
+
+<section>
+
+    <h2>17. Button</h2>
+
+<pre>
+&lt;button&gt;
+    Click Me
+&lt;/button&gt;
+</pre>
+
+<div class="example">
+
+<button
+    onclick="alert('Hello Rashidh!')">
+
+    Click Me
+
+</button>
+
+</div>
+
+</section>
+
+<section>
+
+    <h2>18. Details and Summary</h2>
+
+<p>
+    Creates an expandable/collapsible section.
+</p>
+
+<details>
+
+    <summary>
+        What is HTML?
+    </summary>
+
+    <p>
+        HTML means HyperText Markup Language.
+        It is used to create the structure of webpages.
+    </p>
+
+</details>
+
+</section>
+
+
+
+
+<
+
+
+
+
+
+
+
+
+<section>
+
+    <h2>19. Abbreviation</h2>
+
+<p>
+
+    <abbr
+        title="HyperText Markup Language">
+
+        HTML
+
+    </abbr>
+
+    is used to create webpages.
+
+</p>
+
+</section>
+
+
+
+<!-- =====================================================
+     20. ADDRESS
+====================================================== -->
+
+<section>
+
+    <h2>20. Address</h2>
+
+<address>
+
+    Rashidh S<br>
+
+    Coimbatore<br>
+
+    Tamil Nadu<br>
+
+    India
+
+</address>
+
+<section>
+
+    <h2>21. Div Container</h2>
+
+<div class="example">
+
+    <h3>About Me</h3>
+
+    <p>
+        This entire content is inside a div.
+    </p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+    <h2>22. Span</h2>
+
+<p>
+
+    This is normal text and
+
+    <span style="color: red; font-weight: bold;">
+
+        this part is styled
+
+    </span>
+
+    using span.
+
+</p>
+
+</section>
+
+
+
+
+
+
+
+<div
+    id="example"
+    class="box"
+    title="Example Box">
+
+    Example element
+
+</div>
+
+</section>
+
+
+
+
+
+</section>
+
+
+
+<!-- =====================================================
+     39. COMPLETE FORM
+====================================================== -->
+
+<section>
+
+    <h2>23. Complete Registration Form</h2>
+
+<form>
+
+    <fieldset>
+
+        <legend>
+            Student Registration
+        </legend>
+
+
+        <label>
+            Full Name:
+        </label>
+
+        <input
+            type="text"
+            placeholder="Enter name"
+            required>
+
+        <br><br>
+
+
+        <label>
+            Email:
+        </label>
+
+        <input
+            type="email"
+            placeholder="Enter email"
+            required>
+
+        <br><br>
+
+
+        <label>
+            Password:
+        </label>
+
+        <input
+            type="password"
+            required>
+
+        <br><br>
+
+
+        <label>
+            Date of Birth:
+        </label>
+
+        <input
+            type="date">
+
+        <br><br>
+
+
+        <label>
+            Gender:
+        </label>
+
+        <input
+            type="radio"
+            name="gender">
+
+        Male
+
+        <input
+            type="radio"
+            name="gender">
+
+        Female
+
+        <br><br>
+
+
+        <label>
+            Skills:
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox">
+
+        HTML
+
+        <input
+            type="checkbox">
+
+        CSS
+
+        <input
+            type="checkbox">
+
+        JavaScript
+
+        <br><br>
+
+
+        <label>
+            Course:
+        </label>
+
+        <select>
+
+            <option>
+                MCA
+            </option>
+
+            <option>
+                MBA
+            </option>
+
+            <option>
+                BCA
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label>
+            Message:
+        </label>
+
+        <br>
+
+        <textarea
+            rows="5"
+            cols="40"
+            placeholder="Write your message">
+
+        </textarea>
+
+        <br><br>
+
+
+        <input
+            type="submit"
+            value="Register">
+
+        <input
+            type="reset"
+            value="Reset">
+
+    </fieldset>
+
+</form>
+
+</section>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+    <h2>HTML Complete Guide</h2>
+
+    <p>
+        Learn HTML → Practice → Build Projects
+    </p>
+
+    <p>
+        &copy; 2026 HTML Learning Guide
+    </p>
+
+</footer>
+
+
+
+</body>
+</html>
